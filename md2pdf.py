@@ -15,7 +15,6 @@ for root, dirs, files in os.walk(directory, topdown=True):
         path_to_file = os.path.join(root, file)
         filename, file_extension = os.path.splitext(path_to_file)
         if file_extension == ".md":
-            print(root.split(directory + "\\"))
             md_files[file] = root.split(directory + "\\")[1]
 
 print()
