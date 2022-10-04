@@ -7,8 +7,8 @@ result_directory = "created_pdf_files"
 result_path = directory + "\\" + result_directory 
 
 os.chdir(directory)
-print("starting...")
-print("Directory: " + directory)
+print("Starting...")
+print("Directory: " + directory + "\n")
 for root, dirs, files in os.walk(directory, topdown=True):
     for file in files:
         path_to_file = os.path.join(root, file)
