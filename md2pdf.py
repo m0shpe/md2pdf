@@ -1,5 +1,4 @@
 import os
-from unittest import result
 import aspose.words as aw
 
 md_files = {}
